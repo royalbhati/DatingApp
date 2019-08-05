@@ -1,0 +1,213 @@
+@import '~antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css?family=Anton|Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+.brand {
+  color: aliceblue;
+  text-align: center;
+
+font-family: 'Pacifico',
+cursive;
+
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+.contentContainer {
+  display: grid;
+  // max-height: 100vh;
+  height: 111vh;
+  grid-template-rows: 0.35fr 0.65fr;
+  grid-template-areas: "a r";
+  align-items: center;
+  background: rgb(247, 244, 244);
+  position: relative;
+}
+
+#booCard {
+  position: relative;
+  margin-top: 10px;
+  top: -45px;
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  height: 100%;
+    min-height: 100vh;
+
+  width: 100%;
+  grid-area: a;
+  border: 1px solid #f08e90;
+
+  .matchListText {
+    text-align: center;
+    font-family: 'Anton',
+      sans-serif;
+    letter-spacing: 3px;
+    font-size: 30px;
+    color: #f08e90;
+    background: rgb(255, 255, 255);
+
+  }
+
+  .matchList {
+    padding: 50px;
+  }
+}
+
+
+.ant-list {
+  background: white;
+  height: 60%;
+
+}
+
+.right {
+  margin-left: 30px;
+  min-height: 100vh;
+  border: 1px solid #f08e90;
+  display: flex;
+  flex-direction: column;
+  grid-area: r;
+  align-items: center;
+
+
+  .rightText {
+    text-align: center;
+    font-family: 'Anton',
+      sans-serif;
+    letter-spacing: 3px;
+    font-size: 40px;
+    width: 100%;
+    // height: 60px;
+    color: #f08e90;
+    background: rgb(255, 255, 255);
+  }
+}
+
+.ant-empty-description {
+  display: none;
+}
+
+.ant-empty-image::after {
+  content: "No Matches!"
+}
+
+
+.ant-layout-header {
+  background: #F08E90;
+}
+
+
+.ant-card {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-radius: 50px;
+  border-bottom: 10px solid #f08e90;
+  // box-shadow: inset -4px -7px 39px -4px rgba(250, 10, 250, 0.87);
+  // box-shadow: inset -4px -7px 39px -4px rgb(221, 218, 221);
+
+
+  .ant-card-cover {
+    img {
+      height: 400px;
+      border-radius: 40px;
+      // border-bottom: 6px solid rgb(235, 92, 211);
+
+    }
+  }
+}
+
+
+
+.icons {
+  position: absolute;
+  height: 50px;
+  left: 30px;
+  top: -14px;
+
+
+}
+
+.heart {
+  position: relative;
+  left: 75px;
+  top: 64px;
+  color: #34db34;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background: white;
+  box-shadow: inset 10px -6px 11px -9px rgba(100, 236, 36, 0.75);
+
+
+
+}
+
+.fa-heart {
+  font-size: 50px;
+  margin: 7px
+}
+
+.star {
+  position: absolute;
+  left: 266px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 60px;
+  background: white;
+  font-size: 35px;
+  color: #1caef1;
+
+
+}
+
+.fa-star {
+  margin-bottom: 6px;
+}
+
+.block {
+  position: absolute;
+  left: 166px;
+  top: 92px;
+  font-size: 46px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background: white;
+  color: #f02a2a;
+  box-shadow: inset 10px -6px 16px -9px rgba(233, 8, 8, 0.75);
+
+
+}
+
+.svg-inline--fa {
+  padding: 5px;
+}
+
+.fa-times-circle {
+  margin: 7px;
+
+}
+
+.dashcompanyName {
+  font-family: 'Oswald', sans-serif !important;
+  letter-spacing: 10px;
+  font-size: 40px;
+}
+
+.signupButtons {
+  display: flex;
+  justify-content: space-between
+}
+
+.ant-card-body {
+  position: relative;
+  top: -12px;
+  border-bottom: 84px solid rgba(224, 27, 27, 0.5);
+  border-radius: 50px;
+}
